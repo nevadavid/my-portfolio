@@ -1,4 +1,6 @@
-# My portfolio website made with React
+# My portfolio website
+
+[Website](http://kaos.hu)
 
 # Getting Started with Create React App
 
