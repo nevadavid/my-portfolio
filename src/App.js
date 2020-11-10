@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import ListItem from './components/ListItem/ListItem';
+import Icon from './components/Icon/Icon';
+
+import pkg from '../package.json';
+import references from './references';
+
+import './App.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<main>
+			<h1>
+				{process.env.REACT_APP_AUTHOR}
+
+				<sub>
+					{process.env.REACT_APP_TITLE}
+				</sub>
+			</h1>
+
+			<ul>
+				{references.map(
+					(reference) => (
+						<ListItem
+							key={reference.label}
+							label={reference.label}
+							url={reference.url}
+							badges={reference.badges}
+						></ListItem>
+					)
+				)}
+			</ul>
+
+			<h3>
+				<a
+					href={pkg.homepage}
+					target="_blank"
+				>
+					<Icon
+						name="github"
+					></Icon>
+				</a>
+
+				<a
+					href={`mailto:${pkg.author.email}`}
+				>
+					{pkg.author.email}
+				</a>
+			</h3>
+		</main>
+	);
 }
 
 export default App;

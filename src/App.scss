@@ -1,0 +1,51 @@
+@import 'normalize.css';
+
+$hue: 214;
+$color-primary: hsl($hue, 71, 54);
+$color-secondary: hsl($hue, 71, 10);
+
+:root {
+	--color-primary: #{$color-primary};
+	--color-secondary: #{$color-secondary};
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	color: $color-secondary;
+
+	a {
+		text-decoration: none;
+		color: $color-secondary;
+	}
+
+	ul {
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 2rem;
+	}
+
+	h1 {
+		sub {
+			display: block;
+			font-size: 0.98rem;
+			font-weight: normal;
+		}
+	}
+
+	h3 {
+		display: flex;
+		align-items: center;
+
+		a {
+			svg {
+				margin-right: 1.5rem;
+			}
+		}
+	}
+
+	main {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 3rem;
+	}
+}

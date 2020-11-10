@@ -6,6 +6,7 @@
 		"email": "info@kaos.hu",
 		"url": "http://kaos.hu"
 	},
+	"homepage": "https://github.com/nevadavid/my-portfolio",
 	"version": "1.0.0",
 	"private": true,
 	"repository": {
@@ -19,6 +20,9 @@
 		"@testing-library/jest-dom": "^5.11.5",
 		"@testing-library/react": "^11.1.1",
 		"@testing-library/user-event": "^12.2.0",
+		"node-sass": "^4.14.1",
+		"normalize.css": "^8.0.1",
+		"prop-types": "^15.7.2",
 		"react": "^17.0.1",
 		"react-dom": "^17.0.1",
 		"react-scripts": "4.0.0",

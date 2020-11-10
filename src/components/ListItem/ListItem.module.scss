@@ -1,0 +1,17 @@
+.listItem {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	&Link {
+		margin: 1.5rem 0 0.5rem;
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+
+	&Badges {
+		display: grid;
+		grid-template-columns: repeat(5, auto);
+		grid-gap: 0.25rem;
+	}
+}
