@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import Badge from '../Badge/Badge';
 
 import styles from './ListItem.module.scss';
@@ -37,5 +39,14 @@ function ListItem(
 		</li>
 	);
 }
+
+ListItem.propTypes = {
+	label: PropTypes.oneOfType([
+		PropTypes.string,
+		PropTypes.number,
+	]),
+	url: PropTypes.string,
+	badges: PropTypes.array,
+};
 
 export default ListItem;

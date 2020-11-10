@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import icons from './icons';
 
 import styles from './Icon.module.scss';
@@ -18,5 +20,9 @@ function Icon(
 		</svg>
 	);
 }
+
+Icon.propTypes = {
+	name: PropTypes.string,
+};
 
 export default Icon;

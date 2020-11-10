@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import styles from './Badge.module.scss';
 
 function Badge(
@@ -13,5 +15,12 @@ function Badge(
 		</span>
 	);
 }
+
+Badge.propTypes = {
+	label: PropTypes.oneOfType([
+		PropTypes.string,
+		PropTypes.number,
+	]),
+};
 
 export default Badge;

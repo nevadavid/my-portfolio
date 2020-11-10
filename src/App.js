@@ -34,6 +34,7 @@ function App() {
 				<a
 					href={pkg.homepage}
 					target="_blank"
+					rel="noreferrer"
 				>
 					<Icon
 						name="github"
